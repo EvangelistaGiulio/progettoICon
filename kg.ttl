@@ -29,7 +29,8 @@ ex:coinvolge rdf:type owl:ObjectProperty ;
 
 ###  http://example.org/incidente#vicino
 ex:vicino rdf:type owl:ObjectProperty ;
-          rdfs:domain ex:Persona .
+          rdfs:domain ex:Persona ;
+          rdfs:range ex:Auto .
 
 
 #################################################################
