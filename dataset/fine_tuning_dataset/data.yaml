@@ -1,0 +1,6 @@
+nc: 3
+names: ["crashed car","person", "car"]
+
+train: /content/dataset/fine_tuning_dataset/images/train
+val: /content/dataset/fine_tuning_dataset/images/val
+test: /content/dataset/fine_tuning_dataset/images/test

@@ -1,0 +1,3698 @@
+@prefix ex: <http://example.org/incidente#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/incidente#coinvolge
+ex:coinvolge rdf:type owl:ObjectProperty ;
+             rdfs:domain ex:Incidente ;
+             rdfs:range ex:Persona .
+
+
+###  http://example.org/incidente#vicino
+ex:vicino rdf:type owl:ObjectProperty ;
+          rdfs:domain ex:Persona .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/incidente#Auto
+ex:Auto rdf:type owl:Class .
+
+
+###  http://example.org/incidente#AutoIncidentata
+ex:AutoIncidentata rdf:type owl:Class ;
+                   rdfs:subClassOf ex:Auto .
+
+
+###  http://example.org/incidente#Incidente
+ex:Incidente rdf:type owl:Class .
+
+
+###  http://example.org/incidente#IncidenteGrave
+ex:IncidenteGrave rdf:type owl:Class ;
+                  rdfs:subClassOf ex:Incidente .
+
+
+###  http://example.org/incidente#Persona
+ex:Persona rdf:type owl:Class .
+
+
+###  http://example.org/incidente#PersonaFerita
+ex:PersonaFerita rdf:type owl:Class ;
+                 rdfs:subClassOf ex:Persona .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/incidente#car_100_0
+ex:car_100_0 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_100_1
+ex:car_100_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_100_5
+ex:car_100_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_102_1
+ex:car_102_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_102_2
+ex:car_102_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_103_1
+ex:car_103_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_103_2
+ex:car_103_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_104_0
+ex:car_104_0 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_104_2
+ex:car_104_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_106_0
+ex:car_106_0 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_106_1
+ex:car_106_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_106_10
+ex:car_106_10 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_11
+ex:car_106_11 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_12
+ex:car_106_12 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_13
+ex:car_106_13 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_15
+ex:car_106_15 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_16
+ex:car_106_16 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_17
+ex:car_106_17 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_19
+ex:car_106_19 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_2
+ex:car_106_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_106_21
+ex:car_106_21 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_22
+ex:car_106_22 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_23
+ex:car_106_23 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_24
+ex:car_106_24 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_25
+ex:car_106_25 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_27
+ex:car_106_27 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_106_3
+ex:car_106_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_106_4
+ex:car_106_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_106_5
+ex:car_106_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_106_6
+ex:car_106_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_106_7
+ex:car_106_7 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_106_9
+ex:car_106_9 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_107_0
+ex:car_107_0 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_107_1
+ex:car_107_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_107_10
+ex:car_107_10 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_107_11
+ex:car_107_11 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_107_12
+ex:car_107_12 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_107_13
+ex:car_107_13 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_107_14
+ex:car_107_14 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_107_15
+ex:car_107_15 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_107_16
+ex:car_107_16 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_107_2
+ex:car_107_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_107_5
+ex:car_107_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_107_6
+ex:car_107_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_107_7
+ex:car_107_7 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_107_8
+ex:car_107_8 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_108_1
+ex:car_108_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_109_1
+ex:car_109_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_111_2
+ex:car_111_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_111_3
+ex:car_111_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_111_4
+ex:car_111_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_112_1
+ex:car_112_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_112_3
+ex:car_112_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_112_4
+ex:car_112_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_112_5
+ex:car_112_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_112_6
+ex:car_112_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_112_7
+ex:car_112_7 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_112_8
+ex:car_112_8 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_113_2
+ex:car_113_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_114_1
+ex:car_114_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_114_2
+ex:car_114_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_114_3
+ex:car_114_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_115_1
+ex:car_115_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_117_2
+ex:car_117_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_118_2
+ex:car_118_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_120_2
+ex:car_120_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_120_3
+ex:car_120_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_120_4
+ex:car_120_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_120_5
+ex:car_120_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_121_3
+ex:car_121_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_121_4
+ex:car_121_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_122_1
+ex:car_122_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_124_2
+ex:car_124_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_124_3
+ex:car_124_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_124_4
+ex:car_124_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_126_3
+ex:car_126_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_126_4
+ex:car_126_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_128_1
+ex:car_128_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_128_2
+ex:car_128_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_128_3
+ex:car_128_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_128_5
+ex:car_128_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_129_10
+ex:car_129_10 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_129_11
+ex:car_129_11 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_129_12
+ex:car_129_12 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_129_13
+ex:car_129_13 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_129_5
+ex:car_129_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_129_6
+ex:car_129_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_129_7
+ex:car_129_7 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_129_8
+ex:car_129_8 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_129_9
+ex:car_129_9 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_130_3
+ex:car_130_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_134_1
+ex:car_134_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_134_3
+ex:car_134_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_135_2
+ex:car_135_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_135_3
+ex:car_135_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_136_0
+ex:car_136_0 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_136_2
+ex:car_136_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_136_3
+ex:car_136_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_136_4
+ex:car_136_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_136_5
+ex:car_136_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_136_6
+ex:car_136_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_136_7
+ex:car_136_7 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_138_2
+ex:car_138_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_139_2
+ex:car_139_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_140_0
+ex:car_140_0 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_140_1
+ex:car_140_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_140_4
+ex:car_140_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_141_0
+ex:car_141_0 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_141_3
+ex:car_141_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_142_2
+ex:car_142_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_142_3
+ex:car_142_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_142_4
+ex:car_142_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_142_5
+ex:car_142_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_142_6
+ex:car_142_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_142_7
+ex:car_142_7 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_142_8
+ex:car_142_8 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_142_9
+ex:car_142_9 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_144_2
+ex:car_144_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_144_3
+ex:car_144_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_144_5
+ex:car_144_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_144_6
+ex:car_144_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_145_1
+ex:car_145_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_145_2
+ex:car_145_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_146_1
+ex:car_146_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_146_3
+ex:car_146_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_146_4
+ex:car_146_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_146_5
+ex:car_146_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_147_2
+ex:car_147_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_147_3
+ex:car_147_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_147_4
+ex:car_147_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_149_3
+ex:car_149_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_149_4
+ex:car_149_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_149_5
+ex:car_149_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_149_6
+ex:car_149_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_150_2
+ex:car_150_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_150_3
+ex:car_150_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_150_4
+ex:car_150_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_151_2
+ex:car_151_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_151_3
+ex:car_151_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_151_4
+ex:car_151_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_152_1
+ex:car_152_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_152_10
+ex:car_152_10 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_152_4
+ex:car_152_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_152_5
+ex:car_152_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_152_7
+ex:car_152_7 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_152_8
+ex:car_152_8 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_152_9
+ex:car_152_9 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_153_2
+ex:car_153_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_155_2
+ex:car_155_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_155_3
+ex:car_155_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_155_4
+ex:car_155_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_155_5
+ex:car_155_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_155_6
+ex:car_155_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_156_2
+ex:car_156_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_157_1
+ex:car_157_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_157_5
+ex:car_157_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_159_1
+ex:car_159_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_159_3
+ex:car_159_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_159_4
+ex:car_159_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_160_10
+ex:car_160_10 rdf:type owl:NamedIndividual ,
+                       ex:Auto .
+
+
+###  http://example.org/incidente#car_160_2
+ex:car_160_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_160_3
+ex:car_160_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_160_4
+ex:car_160_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_160_5
+ex:car_160_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_160_6
+ex:car_160_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_160_7
+ex:car_160_7 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_160_8
+ex:car_160_8 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_160_9
+ex:car_160_9 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_161_2
+ex:car_161_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_162_2
+ex:car_162_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_162_3
+ex:car_162_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_162_4
+ex:car_162_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_163_2
+ex:car_163_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_163_3
+ex:car_163_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_164_0
+ex:car_164_0 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_164_1
+ex:car_164_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_164_3
+ex:car_164_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_164_5
+ex:car_164_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_164_6
+ex:car_164_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_164_7
+ex:car_164_7 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_164_8
+ex:car_164_8 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_164_9
+ex:car_164_9 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_165_2
+ex:car_165_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_165_3
+ex:car_165_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_165_4
+ex:car_165_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_20_1
+ex:car_20_1 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_20_5
+ex:car_20_5 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_20_6
+ex:car_20_6 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_20_7
+ex:car_20_7 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_20_8
+ex:car_20_8 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_21_0
+ex:car_21_0 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_22_0
+ex:car_22_0 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_22_2
+ex:car_22_2 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_22_3
+ex:car_22_3 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_22_5
+ex:car_22_5 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_22_7
+ex:car_22_7 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_22_8
+ex:car_22_8 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_23_8
+ex:car_23_8 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_24_2
+ex:car_24_2 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_24_3
+ex:car_24_3 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_24_4
+ex:car_24_4 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_24_5
+ex:car_24_5 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_24_6
+ex:car_24_6 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_24_9
+ex:car_24_9 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_26_4
+ex:car_26_4 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_26_6
+ex:car_26_6 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_26_7
+ex:car_26_7 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_26_8
+ex:car_26_8 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_27_2
+ex:car_27_2 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_27_5
+ex:car_27_5 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_27_6
+ex:car_27_6 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_28_2
+ex:car_28_2 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_28_3
+ex:car_28_3 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_29_2
+ex:car_29_2 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_29_3
+ex:car_29_3 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_86_2
+ex:car_86_2 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_87_1
+ex:car_87_1 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_87_2
+ex:car_87_2 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_87_3
+ex:car_87_3 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_87_4
+ex:car_87_4 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_87_5
+ex:car_87_5 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_87_6
+ex:car_87_6 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_87_7
+ex:car_87_7 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_87_8
+ex:car_87_8 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_916_3
+ex:car_916_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_916_6
+ex:car_916_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_916_7
+ex:car_916_7 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_917_2
+ex:car_917_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_917_5
+ex:car_917_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_918_1
+ex:car_918_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_918_2
+ex:car_918_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_918_3
+ex:car_918_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_918_5
+ex:car_918_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_919_1
+ex:car_919_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_919_2
+ex:car_919_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_919_3
+ex:car_919_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_920_1
+ex:car_920_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_920_2
+ex:car_920_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_920_3
+ex:car_920_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_920_4
+ex:car_920_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_920_5
+ex:car_920_5 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_920_6
+ex:car_920_6 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_920_7
+ex:car_920_7 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_920_8
+ex:car_920_8 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_920_9
+ex:car_920_9 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_924_1
+ex:car_924_1 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_924_3
+ex:car_924_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_925_2
+ex:car_925_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_926_2
+ex:car_926_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_926_3
+ex:car_926_3 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_926_4
+ex:car_926_4 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_927_2
+ex:car_927_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_928_0
+ex:car_928_0 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_928_2
+ex:car_928_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_929_2
+ex:car_929_2 rdf:type owl:NamedIndividual ,
+                      ex:Auto .
+
+
+###  http://example.org/incidente#car_94_1
+ex:car_94_1 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_94_2
+ex:car_94_2 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_94_3
+ex:car_94_3 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_94_4
+ex:car_94_4 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_94_5
+ex:car_94_5 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_95_2
+ex:car_95_2 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_97_1
+ex:car_97_1 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_97_2
+ex:car_97_2 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_97_3
+ex:car_97_3 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_98_2
+ex:car_98_2 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_99_3
+ex:car_99_3 rdf:type owl:NamedIndividual ,
+                     ex:Auto .
+
+
+###  http://example.org/incidente#car_inc_100_2
+ex:car_inc_100_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_100_3
+ex:car_inc_100_3 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_100_4
+ex:car_inc_100_4 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_101_0
+ex:car_inc_101_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_101_1
+ex:car_inc_101_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_101_2
+ex:car_inc_101_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_102_0
+ex:car_inc_102_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_102_3
+ex:car_inc_102_3 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_103_0
+ex:car_inc_103_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_104_1
+ex:car_inc_104_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_105_0
+ex:car_inc_105_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_105_1
+ex:car_inc_105_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_105_2
+ex:car_inc_105_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_106_14
+ex:car_inc_106_14 rdf:type owl:NamedIndividual ,
+                           ex:Auto ,
+                           ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_106_28
+ex:car_inc_106_28 rdf:type owl:NamedIndividual ,
+                           ex:Auto ,
+                           ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_106_8
+ex:car_inc_106_8 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_107_18
+ex:car_inc_107_18 rdf:type owl:NamedIndividual ,
+                           ex:Auto ,
+                           ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_107_3
+ex:car_inc_107_3 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_107_4
+ex:car_inc_107_4 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_107_9
+ex:car_inc_107_9 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_108_0
+ex:car_inc_108_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_108_2
+ex:car_inc_108_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_109_0
+ex:car_inc_109_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_110_0
+ex:car_inc_110_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_110_1
+ex:car_inc_110_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_110_2
+ex:car_inc_110_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_111_0
+ex:car_inc_111_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_111_1
+ex:car_inc_111_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_111_5
+ex:car_inc_111_5 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_112_0
+ex:car_inc_112_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_112_2
+ex:car_inc_112_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_113_0
+ex:car_inc_113_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_113_1
+ex:car_inc_113_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_114_0
+ex:car_inc_114_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_115_0
+ex:car_inc_115_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_116_0
+ex:car_inc_116_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_116_1
+ex:car_inc_116_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_117_0
+ex:car_inc_117_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_117_1
+ex:car_inc_117_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_117_3
+ex:car_inc_117_3 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_118_0
+ex:car_inc_118_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_118_1
+ex:car_inc_118_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_119_0
+ex:car_inc_119_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_119_1
+ex:car_inc_119_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_120_0
+ex:car_inc_120_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_120_1
+ex:car_inc_120_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_121_0
+ex:car_inc_121_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_121_1
+ex:car_inc_121_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_121_2
+ex:car_inc_121_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_122_0
+ex:car_inc_122_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_123_0
+ex:car_inc_123_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_123_1
+ex:car_inc_123_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_124_0
+ex:car_inc_124_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_124_1
+ex:car_inc_124_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_125_0
+ex:car_inc_125_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_125_1
+ex:car_inc_125_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_126_0
+ex:car_inc_126_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_126_1
+ex:car_inc_126_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_126_2
+ex:car_inc_126_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_127_0
+ex:car_inc_127_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_127_1
+ex:car_inc_127_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_128_0
+ex:car_inc_128_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_128_4
+ex:car_inc_128_4 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_128_6
+ex:car_inc_128_6 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_129_0
+ex:car_inc_129_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_129_1
+ex:car_inc_129_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_129_2
+ex:car_inc_129_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_129_3
+ex:car_inc_129_3 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_129_4
+ex:car_inc_129_4 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_130_0
+ex:car_inc_130_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_130_1
+ex:car_inc_130_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_130_2
+ex:car_inc_130_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_131_0
+ex:car_inc_131_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_132_0
+ex:car_inc_132_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_133_0
+ex:car_inc_133_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_133_1
+ex:car_inc_133_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_134_0
+ex:car_inc_134_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_134_2
+ex:car_inc_134_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_135_0
+ex:car_inc_135_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_135_1
+ex:car_inc_135_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_136_1
+ex:car_inc_136_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_137_0
+ex:car_inc_137_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_137_1
+ex:car_inc_137_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_138_0
+ex:car_inc_138_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_138_1
+ex:car_inc_138_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_139_0
+ex:car_inc_139_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_139_1
+ex:car_inc_139_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_140_2
+ex:car_inc_140_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_140_3
+ex:car_inc_140_3 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_141_1
+ex:car_inc_141_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_141_2
+ex:car_inc_141_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_142_0
+ex:car_inc_142_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_142_1
+ex:car_inc_142_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_143_0
+ex:car_inc_143_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_143_1
+ex:car_inc_143_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_144_0
+ex:car_inc_144_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_144_1
+ex:car_inc_144_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_144_4
+ex:car_inc_144_4 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_145_0
+ex:car_inc_145_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_146_0
+ex:car_inc_146_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_146_2
+ex:car_inc_146_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_147_0
+ex:car_inc_147_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_147_1
+ex:car_inc_147_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_147_5
+ex:car_inc_147_5 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_148_0
+ex:car_inc_148_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_149_0
+ex:car_inc_149_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_149_1
+ex:car_inc_149_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_149_2
+ex:car_inc_149_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_150_0
+ex:car_inc_150_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_150_1
+ex:car_inc_150_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_151_0
+ex:car_inc_151_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_151_1
+ex:car_inc_151_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_152_0
+ex:car_inc_152_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_152_2
+ex:car_inc_152_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_152_3
+ex:car_inc_152_3 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_153_0
+ex:car_inc_153_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_153_1
+ex:car_inc_153_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_154_0
+ex:car_inc_154_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_154_1
+ex:car_inc_154_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_155_0
+ex:car_inc_155_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_155_1
+ex:car_inc_155_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_156_0
+ex:car_inc_156_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_156_1
+ex:car_inc_156_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_157_0
+ex:car_inc_157_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_157_2
+ex:car_inc_157_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_157_3
+ex:car_inc_157_3 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_157_4
+ex:car_inc_157_4 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_158_0
+ex:car_inc_158_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_158_1
+ex:car_inc_158_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_159_0
+ex:car_inc_159_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_159_2
+ex:car_inc_159_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_160_0
+ex:car_inc_160_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_160_1
+ex:car_inc_160_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_161_0
+ex:car_inc_161_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_161_1
+ex:car_inc_161_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_162_0
+ex:car_inc_162_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_162_1
+ex:car_inc_162_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_163_0
+ex:car_inc_163_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_163_1
+ex:car_inc_163_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_164_10
+ex:car_inc_164_10 rdf:type owl:NamedIndividual ,
+                           ex:Auto ,
+                           ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_164_2
+ex:car_inc_164_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_164_4
+ex:car_inc_164_4 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_165_0
+ex:car_inc_165_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_165_1
+ex:car_inc_165_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_19_0
+ex:car_inc_19_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_20_0
+ex:car_inc_20_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_20_2
+ex:car_inc_20_2 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_20_3
+ex:car_inc_20_3 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_20_4
+ex:car_inc_20_4 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_20_9
+ex:car_inc_20_9 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_21_6
+ex:car_inc_21_6 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_21_7
+ex:car_inc_21_7 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_22_1
+ex:car_inc_22_1 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_22_11
+ex:car_inc_22_11 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_22_6
+ex:car_inc_22_6 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_23_0
+ex:car_inc_23_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_23_2
+ex:car_inc_23_2 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_24_0
+ex:car_inc_24_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_24_1
+ex:car_inc_24_1 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_24_10
+ex:car_inc_24_10 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_24_7
+ex:car_inc_24_7 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_25_0
+ex:car_inc_25_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_25_4
+ex:car_inc_25_4 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_25_5
+ex:car_inc_25_5 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_26_0
+ex:car_inc_26_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_26_1
+ex:car_inc_26_1 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_26_2
+ex:car_inc_26_2 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_26_3
+ex:car_inc_26_3 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_27_0
+ex:car_inc_27_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_27_1
+ex:car_inc_27_1 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_27_3
+ex:car_inc_27_3 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_27_4
+ex:car_inc_27_4 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_27_7
+ex:car_inc_27_7 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_28_0
+ex:car_inc_28_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_28_1
+ex:car_inc_28_1 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_28_4
+ex:car_inc_28_4 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_29_0
+ex:car_inc_29_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_29_1
+ex:car_inc_29_1 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_86_0
+ex:car_inc_86_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_86_1
+ex:car_inc_86_1 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_87_0
+ex:car_inc_87_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_915_0
+ex:car_inc_915_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_915_1
+ex:car_inc_915_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_915_2
+ex:car_inc_915_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_916_0
+ex:car_inc_916_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_916_1
+ex:car_inc_916_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_916_2
+ex:car_inc_916_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_916_4
+ex:car_inc_916_4 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_916_5
+ex:car_inc_916_5 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_917_0
+ex:car_inc_917_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_917_1
+ex:car_inc_917_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_917_3
+ex:car_inc_917_3 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_917_4
+ex:car_inc_917_4 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_918_0
+ex:car_inc_918_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_918_4
+ex:car_inc_918_4 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_919_0
+ex:car_inc_919_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_919_4
+ex:car_inc_919_4 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_920_0
+ex:car_inc_920_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_920_10
+ex:car_inc_920_10 rdf:type owl:NamedIndividual ,
+                           ex:Auto ,
+                           ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_920_11
+ex:car_inc_920_11 rdf:type owl:NamedIndividual ,
+                           ex:Auto ,
+                           ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_921_0
+ex:car_inc_921_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_921_1
+ex:car_inc_921_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_921_2
+ex:car_inc_921_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_921_3
+ex:car_inc_921_3 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_922_0
+ex:car_inc_922_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_922_1
+ex:car_inc_922_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_923_0
+ex:car_inc_923_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_923_1
+ex:car_inc_923_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_924_0
+ex:car_inc_924_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_924_2
+ex:car_inc_924_2 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_925_0
+ex:car_inc_925_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_925_1
+ex:car_inc_925_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_925_3
+ex:car_inc_925_3 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_926_0
+ex:car_inc_926_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_926_1
+ex:car_inc_926_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_927_0
+ex:car_inc_927_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_927_1
+ex:car_inc_927_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_928_3
+ex:car_inc_928_3 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_929_0
+ex:car_inc_929_0 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_929_1
+ex:car_inc_929_1 rdf:type owl:NamedIndividual ,
+                          ex:Auto ,
+                          ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_94_0
+ex:car_inc_94_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_95_0
+ex:car_inc_95_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_95_1
+ex:car_inc_95_1 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_96_0
+ex:car_inc_96_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_96_1
+ex:car_inc_96_1 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_97_0
+ex:car_inc_97_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_98_0
+ex:car_inc_98_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_98_1
+ex:car_inc_98_1 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_99_0
+ex:car_inc_99_0 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_99_1
+ex:car_inc_99_1 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#car_inc_99_2
+ex:car_inc_99_2 rdf:type owl:NamedIndividual ,
+                         ex:Auto ,
+                         ex:AutoIncidentata .
+
+
+###  http://example.org/incidente#img_100
+ex:img_100 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_101
+ex:img_101 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_102
+ex:img_102 rdf:type owl:NamedIndividual ,
+                    ex:Incidente ;
+           ex:coinvolge ex:person_102_4 .
+
+
+###  http://example.org/incidente#img_103
+ex:img_103 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_104
+ex:img_104 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_105
+ex:img_105 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_106
+ex:img_106 rdf:type owl:NamedIndividual ,
+                    ex:Incidente ;
+           ex:coinvolge ex:person_106_18 ,
+                        ex:person_106_20 ,
+                        ex:person_106_26 .
+
+
+###  http://example.org/incidente#img_107
+ex:img_107 rdf:type owl:NamedIndividual ,
+                    ex:Incidente ;
+           ex:coinvolge ex:person_107_17 .
+
+
+###  http://example.org/incidente#img_108
+ex:img_108 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_109
+ex:img_109 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_110
+ex:img_110 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_111
+ex:img_111 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_112
+ex:img_112 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_113
+ex:img_113 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_114
+ex:img_114 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_115
+ex:img_115 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_116
+ex:img_116 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_117
+ex:img_117 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_118
+ex:img_118 rdf:type owl:NamedIndividual ,
+                    ex:Incidente ;
+           ex:coinvolge ex:person_118_3 ,
+                        ex:person_118_4 ,
+                        ex:person_118_5 .
+
+
+###  http://example.org/incidente#img_119
+ex:img_119 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_120
+ex:img_120 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_121
+ex:img_121 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_122
+ex:img_122 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_123
+ex:img_123 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_124
+ex:img_124 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_125
+ex:img_125 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_126
+ex:img_126 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_127
+ex:img_127 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_128
+ex:img_128 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_129
+ex:img_129 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_130
+ex:img_130 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_131
+ex:img_131 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_132
+ex:img_132 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_133
+ex:img_133 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_134
+ex:img_134 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_135
+ex:img_135 rdf:type owl:NamedIndividual ,
+                    ex:Incidente ;
+           ex:coinvolge ex:person_135_4 .
+
+
+###  http://example.org/incidente#img_136
+ex:img_136 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_137
+ex:img_137 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_138
+ex:img_138 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_139
+ex:img_139 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_140
+ex:img_140 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_141
+ex:img_141 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_142
+ex:img_142 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_143
+ex:img_143 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_144
+ex:img_144 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_145
+ex:img_145 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_146
+ex:img_146 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_147
+ex:img_147 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_148
+ex:img_148 rdf:type owl:NamedIndividual ,
+                    ex:Incidente ;
+           ex:coinvolge ex:person_148_1 .
+
+
+###  http://example.org/incidente#img_149
+ex:img_149 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_150
+ex:img_150 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_151
+ex:img_151 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_152
+ex:img_152 rdf:type owl:NamedIndividual ,
+                    ex:Incidente ;
+           ex:coinvolge ex:person_152_6 .
+
+
+###  http://example.org/incidente#img_153
+ex:img_153 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_154
+ex:img_154 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_155
+ex:img_155 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_156
+ex:img_156 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_157
+ex:img_157 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_158
+ex:img_158 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_159
+ex:img_159 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_160
+ex:img_160 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_161
+ex:img_161 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_162
+ex:img_162 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_163
+ex:img_163 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_164
+ex:img_164 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_165
+ex:img_165 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_19
+ex:img_19 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_20
+ex:img_20 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_21
+ex:img_21 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_22
+ex:img_22 rdf:type owl:NamedIndividual ,
+                   ex:Incidente ;
+          ex:coinvolge ex:person_22_10 ,
+                       ex:person_22_12 ,
+                       ex:person_22_13 ,
+                       ex:person_22_4 ,
+                       ex:person_22_9 .
+
+
+###  http://example.org/incidente#img_23
+ex:img_23 rdf:type owl:NamedIndividual ,
+                   ex:Incidente ;
+          ex:coinvolge ex:person_23_3 ,
+                       ex:person_23_6 ,
+                       ex:person_23_7 ,
+                       ex:person_23_9 .
+
+
+###  http://example.org/incidente#img_24
+ex:img_24 rdf:type owl:NamedIndividual ,
+                   ex:Incidente ;
+          ex:coinvolge ex:person_24_8 .
+
+
+###  http://example.org/incidente#img_25
+ex:img_25 rdf:type owl:NamedIndividual ,
+                   ex:Incidente ;
+          ex:coinvolge ex:person_25_1 ,
+                       ex:person_25_2 ,
+                       ex:person_25_3 .
+
+
+###  http://example.org/incidente#img_26
+ex:img_26 rdf:type owl:NamedIndividual ,
+                   ex:Incidente ;
+          ex:coinvolge ex:person_26_5 .
+
+
+###  http://example.org/incidente#img_27
+ex:img_27 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_28
+ex:img_28 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_29
+ex:img_29 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_86
+ex:img_86 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_87
+ex:img_87 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_915
+ex:img_915 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_916
+ex:img_916 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_917
+ex:img_917 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_918
+ex:img_918 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_919
+ex:img_919 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_920
+ex:img_920 rdf:type owl:NamedIndividual ,
+                    ex:Incidente ;
+           ex:coinvolge ex:person_920_12 .
+
+
+###  http://example.org/incidente#img_921
+ex:img_921 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_922
+ex:img_922 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_923
+ex:img_923 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_924
+ex:img_924 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_925
+ex:img_925 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_926
+ex:img_926 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_927
+ex:img_927 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_928
+ex:img_928 rdf:type owl:NamedIndividual ,
+                    ex:Incidente ;
+           ex:coinvolge ex:person_928_1 .
+
+
+###  http://example.org/incidente#img_929
+ex:img_929 rdf:type owl:NamedIndividual ,
+                    ex:Incidente .
+
+
+###  http://example.org/incidente#img_94
+ex:img_94 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_95
+ex:img_95 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_96
+ex:img_96 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_97
+ex:img_97 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_98
+ex:img_98 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#img_99
+ex:img_99 rdf:type owl:NamedIndividual ,
+                   ex:Incidente .
+
+
+###  http://example.org/incidente#person_102_4
+ex:person_102_4 rdf:type owl:NamedIndividual ,
+                         ex:Persona ;
+                ex:vicino ex:car_102_1 .
+
+
+###  http://example.org/incidente#person_102_5
+ex:person_102_5 rdf:type owl:NamedIndividual ,
+                         ex:Persona .
+
+
+###  http://example.org/incidente#person_106_18
+ex:person_106_18 rdf:type owl:NamedIndividual ,
+                          ex:Persona ;
+                 ex:vicino ex:car_106_10 ,
+                           ex:car_106_16 ,
+                           ex:car_106_19 ,
+                           ex:car_106_4 ,
+                           ex:car_106_6 .
+
+
+###  http://example.org/incidente#person_106_20
+ex:person_106_20 rdf:type owl:NamedIndividual ,
+                          ex:Persona ;
+                 ex:vicino ex:car_106_10 ,
+                           ex:car_106_15 ,
+                           ex:car_106_16 ,
+                           ex:car_106_19 ,
+                           ex:car_106_4 ,
+                           ex:car_106_6 .
+
+
+###  http://example.org/incidente#person_106_26
+ex:person_106_26 rdf:type owl:NamedIndividual ,
+                          ex:Persona ;
+                 ex:vicino ex:car_106_2 .
+
+
+###  http://example.org/incidente#person_107_17
+ex:person_107_17 rdf:type owl:NamedIndividual ,
+                          ex:Persona ,
+                          ex:PersonaFerita ;
+                 ex:vicino ex:car_107_2 ,
+                           ex:car_inc_107_9 .
+
+
+###  http://example.org/incidente#person_118_3
+ex:person_118_3 rdf:type owl:NamedIndividual ,
+                         ex:Persona ;
+                ex:vicino ex:car_118_2 .
+
+
+###  http://example.org/incidente#person_118_4
+ex:person_118_4 rdf:type owl:NamedIndividual ,
+                         ex:Persona ;
+                ex:vicino ex:car_118_2 .
+
+
+###  http://example.org/incidente#person_118_5
+ex:person_118_5 rdf:type owl:NamedIndividual ,
+                         ex:Persona ;
+                ex:vicino ex:car_118_2 .
+
+
+###  http://example.org/incidente#person_135_4
+ex:person_135_4 rdf:type owl:NamedIndividual ,
+                         ex:Persona ;
+                ex:vicino ex:car_135_3 .
+
+
+###  http://example.org/incidente#person_148_1
+ex:person_148_1 rdf:type owl:NamedIndividual ,
+                         ex:Persona ,
+                         ex:PersonaFerita ;
+                ex:vicino ex:car_inc_148_0 .
+
+
+###  http://example.org/incidente#person_152_6
+ex:person_152_6 rdf:type owl:NamedIndividual ,
+                         ex:Persona ;
+                ex:vicino ex:car_152_10 ,
+                          ex:car_152_7 ,
+                          ex:car_152_8 ,
+                          ex:car_152_9 .
+
+
+###  http://example.org/incidente#person_19_1
+ex:person_19_1 rdf:type owl:NamedIndividual ,
+                        ex:Persona .
+
+
+###  http://example.org/incidente#person_19_2
+ex:person_19_2 rdf:type owl:NamedIndividual ,
+                        ex:Persona .
+
+
+###  http://example.org/incidente#person_19_3
+ex:person_19_3 rdf:type owl:NamedIndividual ,
+                        ex:Persona .
+
+
+###  http://example.org/incidente#person_21_1
+ex:person_21_1 rdf:type owl:NamedIndividual ,
+                        ex:Persona .
+
+
+###  http://example.org/incidente#person_21_2
+ex:person_21_2 rdf:type owl:NamedIndividual ,
+                        ex:Persona .
+
+
+###  http://example.org/incidente#person_21_3
+ex:person_21_3 rdf:type owl:NamedIndividual ,
+                        ex:Persona .
+
+
+###  http://example.org/incidente#person_21_4
+ex:person_21_4 rdf:type owl:NamedIndividual ,
+                        ex:Persona .
+
+
+###  http://example.org/incidente#person_21_5
+ex:person_21_5 rdf:type owl:NamedIndividual ,
+                        ex:Persona .
+
+
+###  http://example.org/incidente#person_22_10
+ex:person_22_10 rdf:type owl:NamedIndividual ,
+                         ex:Persona ,
+                         ex:PersonaFerita ;
+                ex:vicino ex:car_inc_22_1 ,
+                          ex:car_inc_22_6 .
+
+
+###  http://example.org/incidente#person_22_12
+ex:person_22_12 rdf:type owl:NamedIndividual ,
+                         ex:Persona ,
+                         ex:PersonaFerita ;
+                ex:vicino ex:car_inc_22_1 ,
+                          ex:car_inc_22_6 .
+
+
+###  http://example.org/incidente#person_22_13
+ex:person_22_13 rdf:type owl:NamedIndividual ,
+                         ex:Persona ,
+                         ex:PersonaFerita ;
+                ex:vicino ex:car_inc_22_1 ,
+                          ex:car_inc_22_6 .
+
+
+###  http://example.org/incidente#person_22_4
+ex:person_22_4 rdf:type owl:NamedIndividual ,
+                        ex:Persona ,
+                        ex:PersonaFerita ;
+               ex:vicino ex:car_inc_22_1 ,
+                         ex:car_inc_22_6 .
+
+
+###  http://example.org/incidente#person_22_9
+ex:person_22_9 rdf:type owl:NamedIndividual ,
+                        ex:Persona ;
+               ex:vicino ex:car_22_5 .
+
+
+###  http://example.org/incidente#person_23_1
+ex:person_23_1 rdf:type owl:NamedIndividual ,
+                        ex:Persona .
+
+
+###  http://example.org/incidente#person_23_3
+ex:person_23_3 rdf:type owl:NamedIndividual ,
+                        ex:Persona ,
+                        ex:PersonaFerita ;
+               ex:vicino ex:car_inc_23_0 .
+
+
+###  http://example.org/incidente#person_23_4
+ex:person_23_4 rdf:type owl:NamedIndividual ,
+                        ex:Persona .
+
+
+###  http://example.org/incidente#person_23_5
+ex:person_23_5 rdf:type owl:NamedIndividual ,
+                        ex:Persona .
+
+
+###  http://example.org/incidente#person_23_6
+ex:person_23_6 rdf:type owl:NamedIndividual ,
+                        ex:Persona ,
+                        ex:PersonaFerita ;
+               ex:vicino ex:car_inc_23_0 .
+
+
+###  http://example.org/incidente#person_23_7
+ex:person_23_7 rdf:type owl:NamedIndividual ,
+                        ex:Persona ,
+                        ex:PersonaFerita ;
+               ex:vicino ex:car_inc_23_0 .
+
+
+###  http://example.org/incidente#person_23_9
+ex:person_23_9 rdf:type owl:NamedIndividual ,
+                        ex:Persona ,
+                        ex:PersonaFerita ;
+               ex:vicino ex:car_inc_23_0 .
+
+
+###  http://example.org/incidente#person_24_8
+ex:person_24_8 rdf:type owl:NamedIndividual ,
+                        ex:Persona ;
+               ex:vicino ex:car_24_4 ,
+                         ex:car_24_5 .
+
+
+###  http://example.org/incidente#person_25_1
+ex:person_25_1 rdf:type owl:NamedIndividual ,
+                        ex:Persona ,
+                        ex:PersonaFerita ;
+               ex:vicino ex:car_inc_25_4 .
+
+
+###  http://example.org/incidente#person_25_2
+ex:person_25_2 rdf:type owl:NamedIndividual ,
+                        ex:Persona ,
+                        ex:PersonaFerita ;
+               ex:vicino ex:car_inc_25_4 ,
+                         ex:car_inc_25_5 .
+
+
+###  http://example.org/incidente#person_25_3
+ex:person_25_3 rdf:type owl:NamedIndividual ,
+                        ex:Persona ,
+                        ex:PersonaFerita ;
+               ex:vicino ex:car_inc_25_4 .
+
+
+###  http://example.org/incidente#person_26_5
+ex:person_26_5 rdf:type owl:NamedIndividual ,
+                        ex:Persona ,
+                        ex:PersonaFerita ;
+               ex:vicino ex:car_inc_26_0 .
+
+
+###  http://example.org/incidente#person_920_12
+ex:person_920_12 rdf:type owl:NamedIndividual ,
+                          ex:Persona ,
+                          ex:PersonaFerita ;
+                 ex:vicino ex:car_920_1 ,
+                           ex:car_inc_920_10 .
+
+
+###  http://example.org/incidente#person_928_1
+ex:person_928_1 rdf:type owl:NamedIndividual ,
+                         ex:Persona ,
+                         ex:PersonaFerita ;
+                ex:vicino ex:car_928_2 ,
+                          ex:car_inc_928_3 .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.w3.org/2002/07/p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.w3.org/2002/07/a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.w3.org/2002/07/a1> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.w3.org/2002/07/a2> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.w3.org/2002/07/a3> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.w3.org/2002/07/i> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "incidente grave" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> ex:AutoIncidentata ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/a1>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> ex:AutoIncidentata ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/a2>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> ex:AutoIncidentata ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/a3>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/a1> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <http://www.w3.org/2002/07/a2>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/a1> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <http://www.w3.org/2002/07/a3>
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/a2> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> <http://www.w3.org/2002/07/a3>
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> ex:coinvolge ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/i> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> <http://www.w3.org/2002/07/a1>
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> ex:coinvolge ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/i> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> <http://www.w3.org/2002/07/a2>
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> ex:coinvolge ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/i> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> <http://www.w3.org/2002/07/a3>
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#classPredicate> ex:Incidente ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/i>
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest rdf:nil
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> ex:IncidenteGrave ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/i>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "persona ferita" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> ex:Persona ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> ex:vicino ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.w3.org/2002/07/a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> ex:AutoIncidentata ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/a>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> ex:PersonaFerita ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.w3.org/2002/07/p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
